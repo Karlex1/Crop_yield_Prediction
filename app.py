@@ -31,6 +31,8 @@ def get_coordinates(district, state, country):
     else:
         st.error(f"Error {response.status_code}: {response.text}")  # Show actual error
         return None, None
+def convert_to_kg_per_bissa(prediction_hg_per_ha):
+        return (prediction_hg_per_ha * 0.1) / 74.25  # Conversion formula
 
 # Function to get average weather data for a year
 def get_weather(district, state, country, year):
@@ -86,6 +88,8 @@ if st.button('Predict Yield'):
             
             input_transformed = transformer.transform(input_df)
             prediction = dtr.predict(input_transformed)
-            st.success(f'Predicted Crop Yield: {prediction[0]:.2f} tonnes')
+            st.success(f'Predicted Crop Yield: {convert_to_kg_per_bissa(prediction[0]):.2f} kg per bissa')
+  
+
     else:
         st.error('Please enter District, State, Country (Area), and Item.')
