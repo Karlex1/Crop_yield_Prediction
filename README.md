@@ -1,6 +1,3 @@
-## Preview
-https://crop-yield-prediction-796r.onrender.com
-
 # Crop Yield Prediction
 
 ## Team
@@ -32,6 +29,15 @@ The **Crop Yield Prediction** project aims to estimate crop yield based on vario
 - **Weather API Integration**: Automatically fetches temperature and rainfall data for the selected region and year.
 - **Streamlit Web Application**: Provides an interactive UI for users to input data and view predictions.
 - **Intelligent Year Handling**: Ensures proper handling of the year input for meaningful predictions.
+- **Nova Chatbot Integration**: A built-in chatbot to assist users with agricultural-related queries in real-time.
+
+## Nova Chatbot
+The **Nova Chatbot** is a virtual assistant integrated into the **Crop Yield Prediction** web app to provide real-time help with agricultural queries. It offers:
+- AI-driven responses to crop-related concerns.
+- Recommendations on fertilizers, pesticides, and best farming practices.
+- A user-friendly floating chat button in the Streamlit UI.
+
+To access Nova, simply click on the chat button at the bottom right of the web app.
 
 ## Installation
 1. Clone the repository:
@@ -78,6 +84,7 @@ This will start a local server, and you can access the app in your browser.
 - Improve UI/UX for better user interaction.
 - Add support for more data sources to improve prediction accuracy.
 - Deploy the Streamlit app online.
+- Expand Nova Chatbot capabilities for multilingual support and voice assistance.
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
@@ -97,7 +104,6 @@ Contributions are welcome! Feel free to fork the repository, make changes, and s
    git push origin feature-branch-name
    ```
 5. Open a pull request on GitHub and describe your changes.
-Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
 
 This project is licensed under the MIT License.
 
