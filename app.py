@@ -77,6 +77,7 @@ def get_weather(district, state, country, start_date):
         return None, None, None
 
 # Streamlit UI
+st.set_page_config(page_title="Crop Yield Prediction", page_icon="🌾", layout="wide")
 st.title('Crop Yield Prediction App')
 
 district = st.text_input('Enter District:')
@@ -123,3 +124,33 @@ if st.button('Predict Yield'):
                 st.error(f"Prediction error: {e}")
     else:
         st.error('Please enter District, State, Country (Area), and Item.')
+# Add Nova chatbot as a floating button
+st.markdown(
+    """
+    <style>
+        #nova-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 999;
+        }
+        #nova-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <a href="https://divyanshupradhan-linux.github.io/Nova/" target="_blank">
+        <button id="nova-btn">🗨️ Nova Chatbot</button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+st.info("💡 Need help with crop-related queries? Use the Nova chatbot by clicking the floating button.")
