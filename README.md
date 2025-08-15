@@ -37,6 +37,10 @@ The **Nova Chatbot** is a virtual assistant integrated into the **Crop Yield Pre
 - Recommendations on fertilizers, pesticides, and best farming practices.
 - A user-friendly floating chat button in the Streamlit UI.
 
+## Certificate
+<img width="1600" height="1200" alt="Hack2skill-Certificate" src="https://github.com/user-attachments/assets/5e586d81-b6ec-42d7-812b-7e03081c25ae" />
+
+
 To access Nova, simply click on the chat button at the bottom right of the web app.
 
 ## Installation
